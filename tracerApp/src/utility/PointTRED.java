@@ -44,9 +44,20 @@ public class PointTRED {
 
     }
 
+    public double dot(PointTRED point)
+    {
+        return x*point.x + y*point.y + z*point.z;
+    }
 
+    public double dot(Vector3D vector)
+    {
+        return x*vector.x + y*vector.y + z*vector.z;
+    }
 
-
+    public double dot (Norm nor)
+    {
+        return x*nor.x + y*nor.y + z*nor.z;
+    }
 
 
 }
